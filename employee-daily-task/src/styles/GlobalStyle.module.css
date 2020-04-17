@@ -1,0 +1,83 @@
+.HeaderContainer {
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LogoSection {
+    height: 100%;
+    width: 35%;
+    display: flex;
+}
+
+.CompanyLogo {
+    height: 100%;
+    width: 7vw;
+    object-fit: contain;
+}
+
+.CompanyDetailsContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CompanyDetails {
+    padding: 0;
+    margin: 0;
+    font-size: 1.7em;
+    color: #f1f2f6;
+    font-weight: bold;
+}
+
+.UserMenuContainer {
+    height: 100%;
+    width: 12vh;
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.UserPic {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 100%;
+    background-color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UserPic:hover {
+    transition: 0.2s;
+    background-color: #d8d8d8;
+}
+
+.SideBarContainer {
+    height: 86vh;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 10px;
+    background-color: #ffc048;
+    border: 5px solid #f1f2f6;
+}
+
+.SideBarMenuItems {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffaf40;
+    cursor: pointer;
+    color: #474747;
+    font-weight: bold;
+}
+
+.SideBarMenuItems:hover {
+    transition: 0.5s;
+    background-color: transparent;
+    color: #252525;
+}

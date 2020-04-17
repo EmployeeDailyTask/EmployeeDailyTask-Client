@@ -6,7 +6,8 @@ import {
   Route
 } from 'react-router-dom'
 import {
-LandingPage
+LandingPage,
+HomePage
 } from './pages'
 import {
 Provider
@@ -20,6 +21,7 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path='/' component={LandingPage} />
+            <Route exact path='/home' component={HomePage} />
           </Switch>
         </div>
       </Router>

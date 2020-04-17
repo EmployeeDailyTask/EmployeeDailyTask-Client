@@ -1,0 +1,96 @@
+.OverviewContainer {
+    height: 85vh;
+    width: 80vw;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.OverviewHeader {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffc048;
+    border-radius: 10px;
+    color: #474747;
+}
+
+.HeaderContent {
+    margin: 3px;
+}
+
+.OverViewContent {
+    width: 90%;
+    height: 80%;
+    padding-top: 15px;
+}
+
+.ContentTitle {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffc048;
+    font-weight: bold;
+    color: #474747;
+}
+
+.ContentContainer {
+    height: 30%;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.OverviewCard {
+    height: 100%;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.CardHeader {
+    height: 23%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px 10px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ffaf40;
+    color: #474747;
+}
+
+.CardContent {
+    height: 73%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px 5px 10px 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    background-color: #ffaf40;
+    color: #474747;
+}
+
+.OverviewCard:hover > .CardHeader {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    transition: 0.3s;
+}
+
+.OverviewCard:hover > .CardContent {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    transition: 0.5s;
+
+}

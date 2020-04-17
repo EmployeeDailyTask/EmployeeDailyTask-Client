@@ -1,0 +1,14 @@
+.HomePageContainer {
+    height: 100vh;
+    width: 100vw;
+}
+
+.MainContainer {
+    height: 88vh;
+    width: 100vw;
+    background-color: #f1f2f6;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+    overflow: hidden;
+}

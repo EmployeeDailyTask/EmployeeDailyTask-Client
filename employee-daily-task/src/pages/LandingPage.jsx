@@ -1,12 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/LandingPageStyle.module.css'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../actions/userAction'
 
-function LandingPage () {
+export default function LandingPage ({ history }) {
     const [loginEmail, setLoginEmail] = useState('')
     const [loginPassword, setLoginPassword] = useState('')
+    const loggedIn = useSelector(state => state.userReducer.fullName)
     const dispatch = useDispatch()
+
+    useEffect(()=> {
+        if(loggedIn) {
+            history.push('/home')
+        } else {
+            console.log('loggedOut')
+        }
+    }, [loggedIn, history])
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -63,5 +72,3 @@ function LandingPage () {
         </div>
     )
 }
-
-export default LandingPage
