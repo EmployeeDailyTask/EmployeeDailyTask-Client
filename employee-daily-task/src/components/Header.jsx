@@ -7,7 +7,7 @@ export default function Header () {
             <div className={styles.LogoSection}>
                 <img className={styles.CompanyLogo} src={require('../assets/xcidic.png')} alt='Company Logo' />
                     <div className={styles.CompanyDetailsContainer}>
-                        <p className={styles.CompanyDetails}>Xcindic</p>
+                        <p className={styles.CompanyDetails}>Xcidic</p>
                         <p className={styles.CompanyDetails}>Daily Task Manager</p>
                     </div>
             </div>

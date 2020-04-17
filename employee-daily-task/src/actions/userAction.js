@@ -9,6 +9,7 @@ export const login = (email, password) => {
         })
         .then(({ data }) => {
             const userData = data
+            localStorage.setItem('token', userData.token)
             dispatch({
                 type: 'LOGIN',
                 payload: userData
@@ -16,6 +17,26 @@ export const login = (email, password) => {
         })
         .catch(err => {
             console.log(err)
+        })
+    }
+}
+
+export const getUserData = () => {
+    return (dispatch) => {
+        axios.get(`${baseUrl}/user`, {
+            headers: {
+                token: localStorage.getItem('token')
+            }
+        })
+        .then(({ data }) => {
+            const userData = data
+            dispatch({
+                type: 'LOGIN',
+                payload: userData
+            })
+        })
+        .catch(err => {
+            console.log(err.response)
         })
     }
 }

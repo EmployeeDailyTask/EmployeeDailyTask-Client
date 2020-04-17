@@ -58,8 +58,7 @@
 .SideBarContainer {
     height: 86vh;
     width: 20vw;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 10px;
+    border-radius: 25px 10px 10px 10px;
     background-color: #ffc048;
     border: 5px solid #f1f2f6;
 }

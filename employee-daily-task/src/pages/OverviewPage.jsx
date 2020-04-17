@@ -7,13 +7,16 @@ export default function OverViewPage () {
     const activeTasks = useSelector(state => state.taskReducer.activeTasks)
     const expiredTasks = useSelector(state => state.taskReducer.expiredTasks)
     const submittedTasks = useSelector(state => state.taskReducer.submittedTasks)
+    const fullName = useSelector(state => state.userReducer.fullName)
+    const division = useSelector(state => state.userReducer.division)
+    const level = useSelector(state => state.userReducer.level)
 
     return (
         <div className={styles.OverviewContainer}>
             <div className={styles.OverviewHeader}>
-                <h1 className={styles.HeaderContent}>Okka Linardi</h1>
-                <h2 className={styles.HeaderContent}>IT Division</h2>
-                <h3 className={styles.HeaderContent}>Employee</h3>
+                <h1 className={styles.HeaderContent}>{fullName}</h1>
+                <h2 className={styles.HeaderContent}>{division} Division</h2>
+                <h3 className={styles.HeaderContent}>{level}</h3>
             </div>
             <div className={styles.OverViewContent}>
                 <div className={styles.ContentTitle}>
