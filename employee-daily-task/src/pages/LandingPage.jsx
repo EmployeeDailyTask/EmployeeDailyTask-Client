@@ -12,8 +12,6 @@ export default function LandingPage ({ history }) {
     useEffect(()=> {
         if(loggedIn) {
             history.push('/xcidic')
-        } else {
-            console.log('loggedOut')
         }
     }, [loggedIn, history])
 

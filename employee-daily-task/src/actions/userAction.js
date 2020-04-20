@@ -40,3 +40,9 @@ export const getUserData = () => {
         })
     }
 }
+
+export const logout = () => {
+    return({
+        type: 'LOGOUT'
+    })
+}

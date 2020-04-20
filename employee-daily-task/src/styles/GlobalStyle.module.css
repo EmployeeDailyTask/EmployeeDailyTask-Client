@@ -40,6 +40,37 @@
     align-items: center;
 }
 
+.userMenu {
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    background-color: #f1f2f6;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: translateY(50%);
+    z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.MenuItem {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7vh;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.MenuItem:hover {
+    background-color: #bfc0c4;
+}
+
 .UserPic {
     height: 10vh;
     width: 10vh;
@@ -48,6 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .UserPic:hover {
@@ -79,4 +111,25 @@
     transition: 0.5s;
     background-color: transparent;
     color: #252525;
+}
+
+
+.TasksMenuItem {
+    width: 20vw;
+    height: 100%;
+    border-top: 2px solid #ffa502;
+    border-left: 2px solid #ffa502;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    background-color: #fad390;
+}
+
+.TasksMenuItem:hover {
+    transform: translateY(-12px);
+    transition: 0.5s;
+    border-right: 1px solid #ffa502;
 }

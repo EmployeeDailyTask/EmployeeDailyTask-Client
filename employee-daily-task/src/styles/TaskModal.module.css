@@ -1,0 +1,162 @@
+.ModalContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: #522d0da1;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ModalContent {
+    height: 50%;
+    width: 50%;
+    background-color: #f1f2f6;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.CloseContainer {
+    height: 6%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vh;
+}
+
+.MainContainer {
+    height: 94%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardTitle {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.TaskDetailContainer {
+    height: 85%;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.TaskStatus {
+    height: 15%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.TaskDescription {
+    height: 80%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    margin-top: 7px;
+    padding: 5px;
+}
+
+.editButtonContainer {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editButton {
+    width: 75%;
+    height: 90%;
+    border: none;
+    border-radius: 13px;
+    background-color: #f1c40f;
+    border: 2px solid #c5a00c;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.editButton:hover {
+    background-color: #c5a00c;
+}
+
+.editButton:active {
+    background-color: #f1c40f;
+}
+
+.TaskForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#TaskTitleInput {
+    width: 50%;
+    border: none;
+    background-color: #ababad;
+    border-radius: 10px;
+}
+
+.TaskDescInput {
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 0 0 15px 15px;
+    margin-top: 7px;
+    padding: 5px;
+}
+
+.FormButtonContainer {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubmitFormButton {
+    height: 60%;
+    width: 20%;
+    margin-right: 15px;
+    background-color: #f1c40f;
+    border: 2px solid #c5a00c;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.CancelFormButton {
+    height: 60%;
+    width: 20%;
+    background-color: #fc5c65;
+    border: 2px solid #eb3b5a;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.SubmitFormButton:hover {
+    background-color: #c5a00c;
+}
+
+.CancelFormButton:hover {
+    background-color: #eb3b5a;
+}
+
+.SubmitFormButton:active {
+    background-color: #f1c40f;
+}
+
+.CancelFormButton:active {
+    background-color: #fc5c65;
+}
