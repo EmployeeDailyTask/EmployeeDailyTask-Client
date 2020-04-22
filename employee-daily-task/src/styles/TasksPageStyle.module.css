@@ -1,0 +1,22 @@
+.TasksPageContainer {
+    height: 85vh;
+    width: 80vw;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TasksMenuBar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: #fad390;
+    border-radius: 10px 10px 0 0;
+}
+
+.TasksContentContainer {
+    height: 90%;
+    width: 100%;
+    background-color: #fad390;
+}

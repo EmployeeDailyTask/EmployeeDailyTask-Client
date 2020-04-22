@@ -1,0 +1,130 @@
+.StatusTasksPage {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TasksListContainer {
+    height: 80%;
+    width: 90%;
+    border-radius: 15px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+
+.StatusTaskCardContainer {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.StatusTaskCard {
+    height: 100px;
+    width: 95%;
+    background-color: white;
+    margin-top: 5px;
+    display: flex;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+}
+
+.StatusTaskTitle {
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.StatusTaskDescription {
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    overflow-y: scroll;
+    font-weight: normal;
+}
+
+.TaskManagerDescription {
+    width: 60%;
+    height: 90%;
+    padding: 5px;
+    overflow-y: scroll;
+    font-weight: normal;
+}
+
+.TaskCardButtons {
+    width: 20%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-left: 2px solid black;
+}
+
+.ManagerEditButton {
+    height: 40%;
+    width: 45%;
+    border-radius: 7px;
+    background-color: #fdcb6e;
+    border: 2px solid #cca459;
+    cursor: pointer;
+}
+
+.ManagerEditButton:hover {
+    background-color: #cca459;
+}
+
+.ManagerEditButton:active {
+    background-color: #fdcb6e;
+}
+
+.ManagerFinishButton {
+    height: 40%;
+    width: 45%;
+    border-radius: 7px;
+    background-color: #00cec9;
+    border: 2px solid #019491;
+    cursor: pointer;
+}
+
+.ManagerFinishButton:hover {
+    background-color: #019491;
+}
+
+.ManagerFinishButton:active {
+    background-color: #00cec9;
+}
+
+.ManagerDeleteButton {
+    height: 40%;
+    width: 45%;
+    border-radius: 7px;
+    background-color: #ff7675;
+    border: 2px solid #c75b5b;
+    cursor: pointer;
+}
+
+.ManagerDeleteButton:hover {
+    background-color: #c75b5b;
+}
+
+.ManagerDeleteButton:active {
+    background-color: #ff7675;
+}

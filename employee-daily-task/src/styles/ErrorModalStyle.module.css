@@ -1,0 +1,41 @@
+.errorModal {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 5;
+        background-color: #522d0da1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.errorModalContainer {
+    width: 40%;
+    border-radius: 15px;
+    background-color: #fab1a0;
+    border: 5px solid #d63031;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-size: 3vh;
+    font-weight: bolder;
+}
+
+.closeErrorButton {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    border: 2px solid #c23616;
+    background-color: #e84118;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.closeErrorButton:active {
+    background-color: #e84118;
+}
+
+.closeErrorButton:hover {
+    background-color: #c23616;
+}

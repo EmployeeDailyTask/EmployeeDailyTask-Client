@@ -1,0 +1,67 @@
+.confirmationModal {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #522d0da1;
+}
+
+.dialogBox {
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: #fbc531;
+    border: 5px solid black;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirmationButtons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deleteButton {
+    width: 40%;
+    border: none;
+    background-color: #e84118;
+    border-radius: 10px;
+    border: 3px solid #a83012;
+    font-size: 3vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #a83012;
+}
+
+.deleteButton:active {
+    background-color: #e84118;
+}
+
+.cancelDeleteButton {
+    width: 40%;
+    border: none;
+    background-color: #F6D794;
+    border-radius: 10px;
+    border: 3px solid #bda572;
+    font-size: 3vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancelDeleteButton:hover {
+    background-color: #bda572;
+}
+
+.cancelDeleteButton:active {
+    background-color: #F6D794;
+}

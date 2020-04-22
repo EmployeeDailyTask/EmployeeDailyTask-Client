@@ -1,0 +1,137 @@
+.TaskCardContainer {
+    margin-top: 15px;
+    height: 95%;
+    width: 30%;
+    border-radius: 15px;
+    background-color: burlywood;
+    overflow-y: scroll;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TaskCardInner {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TaskCard {
+    height: 300px;
+    width: 95%;
+    background-color: #f1f2f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.TaskTitle {
+    height: 10%;
+    font-weight: bolder;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TaskDescription {
+    height: 5vh;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.TaskButtonContainer {
+    height: 4vh;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.TaskDetailButton {
+    height: 4vh;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: #EAB543;
+    border: 2px solid #c99b39;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.TaskSubmitButton {
+    height: 4vh;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff9f43;
+    border: 2px solid #d88639;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.TaskSubmitButton:hover {
+    background-color: #d88639;
+}
+
+.TaskDetailButton:hover {
+    background-color: #c99b39;
+}
+
+.TaskSubmitButton:active {
+    background-color: #ff9f43;
+}
+
+.TaskDetailButton:active {
+    background-color: #EAB543;
+}
+
+.ActiveTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddButtonContainer {
+    display: flex;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.AddButton {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 10px;
+    background-color: #ff9f43;
+    border: 2px solid #d88639;
+    font-size: 3vh;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.AddButton:hover {
+    background-color: #d88639;
+}
+
+.AddButton:active {
+    background-color: #ff9f43;
+}
+
+.deleteTaskButton {
+    border: 3px solid #eb4d4b;
+    background-color: #ff7979;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.deleteTaskButton:hover {
+    background-color: #eb4d4b;
+}
+
+.deleteTaskButton:active {
+    background-color: #ff7979;
+}

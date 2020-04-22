@@ -1,0 +1,154 @@
+.HRPage {
+    height: 85vh;
+    width: 80vw;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HRPageTitle {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.HRPageMenu {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HRMenuItem {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchInput {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    border: 2px solid burlywood;
+    background-color: #f7cd96;
+    font-size: 2vh;
+}
+
+.SearchInput:focus {
+    background-color: burlywood;
+}
+
+.HREmployeeList {
+    height: 80%;
+    width: 98%;
+    background-color: #FAD390;
+    border-radius: 15px 15px 0px 0px;
+    border: 4px solid #c2a470;
+    padding: 10px;
+}
+
+.EmployeeTable {
+    height: 480px;
+    width: 100%;
+}
+
+.TableHeaderContainer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: #FFA501;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.EmployeeTableHeader {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.RegisterEmployeeButton {
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    background-color: #fffa65;
+    border-top: 3px solid #FFA501;
+    border-left: 3px solid #FFA501;
+    border-right: 3px solid #FFA501;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.RegisterEmployeeButton:hover {
+    background-color: #bdb94b;
+}
+
+.RegisterEmployeeButton:active {
+    background-color: #fffa65;
+}
+
+.EmployeeTableContent {
+    height: 430px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.EmployeeTableRowOdd {
+    transition: 0.3s;
+    height: 50px;
+    width: 100%;
+    background-color: #f6e58d;
+    display: flex;
+}
+
+.EmployeeTableRowOdd:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.EmployeeTableRowOdd:active {
+    background-color: #522d0da1;
+    font-weight: normal;
+}
+
+.EmployeeTableRowEven {
+    transition: 0.3s;
+    height: 50px;
+    width: 100%;
+    background-color: #fab433;
+    display: flex;
+}
+
+.EmployeeTableRowEven:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.EmployeeTableRowEven:active {
+    background-color: #522d0da1;
+    font-weight: normal;
+}
+
+.EmployeeTableValue {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
