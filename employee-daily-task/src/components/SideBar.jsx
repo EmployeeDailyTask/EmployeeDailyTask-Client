@@ -28,9 +28,6 @@ export default function SideBar ({ history }) {
                         Human Resources Menu
                     </div>
             }
-            <div className={styles.SideBarMenuItems} onClick={() => linkHandle('/xcidic/HR')}>
-                        Human Resources Menu
-                    </div>
         </div>
     )
 }

@@ -29,3 +29,19 @@ export const openDeleteModal = (taskId, page) => ({
 export const closeDeleteModal = () => ({
     type: 'CLOSE_DELETE_MODAL'
 })
+
+export const openRegisterModal = () => ({
+    type: 'OPEN_REGISTER_MODAL'
+})
+
+export const closeRegisterModal = () => ({
+    type: 'CLOSE_REGISTER_MODAL'
+})
+
+export const toggleChangePassModal = () => ({
+    type: 'TOGGLE_CHANGE_MODAL'
+})
+
+export const closeErrorModal = () => ({
+    type: 'CLEAR_ERROR'
+})

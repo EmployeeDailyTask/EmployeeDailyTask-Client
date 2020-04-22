@@ -3,7 +3,7 @@ import styles from '../styles/OverviewPageStyle.module.css'
 import OverviewCard from '../components/OverviewCard'
 import { useSelector } from 'react-redux'
 
-export default function OverViewPage () {
+export default function OverViewPage ({ history }) {
     const activeTasks = useSelector(state => state.taskReducer.activeTasks)
     const expiredTasks = useSelector(state => state.taskReducer.expiredTasks)
     const submittedTasks = useSelector(state => state.taskReducer.submittedTasks)
@@ -23,9 +23,9 @@ export default function OverViewPage () {
                     Here are your Work Overview for Today, {new Date().toDateString()}
                 </div>
                 <div className={styles.ContentContainer}>
-                    <OverviewCard title='Expired' numOfTask={expiredTasks.length} />
-                    <OverviewCard title='Today' numOfTask={activeTasks.length} />
-                    <OverviewCard title='Submitted' numOfTask={submittedTasks.length} />
+                    <OverviewCard history={history} title='Expired' numOfTask={expiredTasks.length} />
+                    <OverviewCard history={history} title='Today' numOfTask={activeTasks.length} />
+                    <OverviewCard history={history} title='Submitted' numOfTask={submittedTasks.length} />
                 </div>
             </div>
         </div>

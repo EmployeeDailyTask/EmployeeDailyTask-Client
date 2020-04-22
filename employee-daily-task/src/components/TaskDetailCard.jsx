@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from '../styles/TodayTaskComponentStyle.module.css'
 import {
-    openTaskModal
+    openTaskModal,
+    openDeleteModal
 } from '../actions/modalAction'
 import {
-    submitTask
+    submitTask,
 } from '../actions/taskAction'
 import { useDispatch } from 'react-redux'
 
@@ -19,10 +20,15 @@ export default function TaskDetailCard({ task }) {
         dispatch(submitTask(task._id))
     }
 
+    const toggleConfirmationModal = () => {
+        dispatch(openDeleteModal(task._id, 'employee'))
+    }
+
     return (
         <div className={styles.TaskCard}>
             <div className={styles.TaskTitle}>
-                {task.title}
+                <div>{task.title}</div>
+                <button onClick={() => toggleConfirmationModal()} className={styles.deleteTaskButton}>Delete</button>
             </div>
             <div className={styles.TaskDescription}>
                 {task.description.slice(0, 75)} . . .

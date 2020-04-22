@@ -2,7 +2,11 @@ const initialState = {
     taskCardModal: false,
     taskCardModalContent: null,
     deleteModal: false,
-    deleteModalContent: null
+    deleteModalContent: null,
+    registerModal: false,
+    changePasswordModal: false,
+    successModal: false,
+    successMessage: ''
 }
 
 const taskReducer = (state=initialState, action) => {
@@ -41,6 +45,33 @@ const taskReducer = (state=initialState, action) => {
                 ...state,
                 deleteModal: false,
                 deleteModalContent: null
+            }
+        case 'OPEN_REGISTER_MODAL':
+            return {
+                ...state,
+                registerModal: true
+            }
+        case 'CLOSE_REGISTER_MODAL':
+            return {
+                ...state,
+                registerModal: false
+        }
+        case 'TOGGLE_CHANGE_MODAL':
+            return {
+                ...state,
+                changePasswordModal: !state.changePasswordModal
+            }
+        case 'OPEN_SUCCESS_MODAL':
+            return {
+                ...state,
+                successModal: true,
+                successMessage: action.payload
+            }
+        case 'CLOSE_SUCCESS_MODAL':
+            return {
+                ...state,
+                successModal: false,
+                successMessage: ''
             }
         default: 
         return state

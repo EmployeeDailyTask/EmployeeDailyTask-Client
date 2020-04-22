@@ -39,6 +39,8 @@
     margin-left: 10px;
     margin-right: 30px;
     font-size: 2vh;
+    border: 2px solid #aaa745;
+    background-color: #fffa65;
 }
 
 .ManagerPageDate {
@@ -47,8 +49,9 @@
     margin-left: 10px;
     margin-right: 30px;
     border-radius: 5px;
-    border: 1px solid #b3b2b2;
     font-size: 2vh;
+    border: 2px solid #aaa745;
+    background-color: #fffa65;
 }
 
 .ManagerTaskContent {

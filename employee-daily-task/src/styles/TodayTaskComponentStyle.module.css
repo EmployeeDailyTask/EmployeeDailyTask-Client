@@ -33,6 +33,8 @@
     padding-left: 5px;
     margin-bottom: 10px;
     margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .TaskDescription {
@@ -107,4 +109,29 @@
     border: 2px solid #d88639;
     font-size: 3vh;
     font-weight: bolder;
+    cursor: pointer;
+}
+
+.AddButton:hover {
+    background-color: #d88639;
+}
+
+.AddButton:active {
+    background-color: #ff9f43;
+}
+
+.deleteTaskButton {
+    border: 3px solid #eb4d4b;
+    background-color: #ff7979;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.deleteTaskButton:hover {
+    background-color: #eb4d4b;
+}
+
+.deleteTaskButton:active {
+    background-color: #ff7979;
 }

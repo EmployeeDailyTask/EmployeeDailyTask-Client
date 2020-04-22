@@ -53,6 +53,7 @@
     height: 100%;
     width: 25%;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .CardHeader {
@@ -93,4 +94,19 @@
     border: none;
     transition: 0.5s;
 
+}
+
+.OverviewLoading {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.OverviewSpinner {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
 }

@@ -13,7 +13,7 @@ const taskReducer = (state=initialState, action) => {
         case 'FETCH_TASKS' :
             const todayDate = new Date()
             const startOfDay = new Date(todayDate.getFullYear(), todayDate.getMonth(), todayDate.getDate())
-
+            
             const active = action.payload.tasks.filter(task => task.status === 'Active')
             const expired = action.payload.tasks.filter(task => task.status === 'Expired')
             const submitted = action.payload.tasks.filter(task => task.status === 'Submitted')

@@ -84,6 +84,7 @@
     border: 2px solid #c5a00c;
     font-size: 2vh;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .editButton:hover {
@@ -107,6 +108,7 @@
     border: none;
     background-color: #ababad;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .TaskDescInput {
@@ -116,6 +118,7 @@
     border-radius: 0 0 15px 15px;
     margin-top: 7px;
     padding: 5px;
+    background-color: #ababad;
 }
 
 .FormButtonContainer {

@@ -45,7 +45,6 @@
     width: 100%;
     background-color: rgba(209, 209, 209, 0.75);
     border-radius: 15px;
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +55,20 @@
     height: 10%;
     width: 100%;
     text-align: center;
+    margin-bottom: 5%;
+}
+
+.LoginError {
+    height: 10%;
+    width: 100%;
+    border: 3px solid #e74c3c;
+    background-color: #e96d5f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: bold;
 }
 
 .AppTitleName {

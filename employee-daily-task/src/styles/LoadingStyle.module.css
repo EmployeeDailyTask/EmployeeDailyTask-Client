@@ -1,0 +1,30 @@
+.LoadingContainerFull {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #ffffffa1;
+}
+
+.loadingSpinnerContainer {
+    height: 20%;
+    width: 20%;
+}
+
+.loadingSpinner {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.loadingMessageContainer {
+    height: 10%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}

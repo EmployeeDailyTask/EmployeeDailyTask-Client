@@ -1,0 +1,24 @@
+.SuccessModal {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 5;
+    background-color: #522d0da1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SuccessModalContainer {
+    height: 20%;
+    width: 25%;
+    border-radius: 15px;
+    background-color: #F8EFBA;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 4vh;
+    text-align: center;
+}

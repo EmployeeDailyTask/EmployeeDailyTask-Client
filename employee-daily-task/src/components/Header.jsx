@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import styles from '../styles/GlobalStyle.module.css'
+import { useDispatch } from 'react-redux'
+import {
+    toggleChangePassModal,
+} from '../actions/modalAction'
 
 export default function Header ({handleLogout}) {
     const [userMenu, setUserMenu] = useState(false)
     const [userMenuStyle, setUserMenuStyle] = useState(null)
+    const dispatch = useDispatch()
 
     const toggleUserMenu = () => {
         if (userMenu) {
@@ -14,6 +19,11 @@ export default function Header ({handleLogout}) {
             })
         }
         setUserMenu(!userMenu)
+    }
+
+    const handleChangeModal = () => {
+        dispatch(toggleChangePassModal())
+        toggleUserMenu()
     }
 
     return (
@@ -32,7 +42,7 @@ export default function Header ({handleLogout}) {
                 {
                     userMenu
                     && <div className={styles.userMenu}>
-                        <div className={styles.MenuItem}>Change Password</div>
+                        <div onClick={() => handleChangeModal()} className={styles.MenuItem}>Change Password</div>
                         <div onClick={() => handleLogout()} className={styles.MenuItem}>LogOut</div>
                     </div>
                 }
